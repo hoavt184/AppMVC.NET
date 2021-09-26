@@ -1,9 +1,10 @@
+using App.Models.Contacts;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace App.Models 
 {
-    // razorweb.models.MyBlogContext
+    // App.Models.AppDbContext
     public class AppDbContext : DbContext
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
@@ -33,7 +34,7 @@ namespace App.Models
 
         }
 
-        
+        public DbSet<Contact> Contacts {set; get;}
 
         // public DbSet<Article> articles { get; set; }
     }
